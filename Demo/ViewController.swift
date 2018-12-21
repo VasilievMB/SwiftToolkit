@@ -10,11 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+        let separatorView = SeparatorView()
+        SeparatorView.appearance().backgroundColor = UIColor.green
+        separatorView.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(separatorView)
+        
+        NSLayoutConstraint.activate([
+            separatorView.topAnchor.constraint(equalTo: view.topAnchor, constant: 64),
+            separatorView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            separatorView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            ])
     }
-
 
 }
 
