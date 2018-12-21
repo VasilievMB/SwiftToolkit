@@ -17,6 +17,8 @@
 		742AFD0A21CCF3FA001EB13E /* SwiftToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 742AFCFC21CCF3FA001EB13E /* SwiftToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		742AFD1121CCF400001EB13E /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFCC621CCF221001EB13E /* UserDefault.swift */; };
 		742AFD1321CCF46D001EB13E /* UserDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1221CCF46D001EB13E /* UserDefaultTests.swift */; };
+		742AFD1521CD47B9001EB13E /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1421CD47B9001EB13E /* SeparatorView.swift */; };
+		742AFD1621CD47B9001EB13E /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1421CD47B9001EB13E /* SeparatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		742AFD0721CCF3FA001EB13E /* SwiftToolkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftToolkitTests.swift; sourceTree = "<group>"; };
 		742AFD0921CCF3FA001EB13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		742AFD1221CCF46D001EB13E /* UserDefaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultTests.swift; sourceTree = "<group>"; };
+		742AFD1421CD47B9001EB13E /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				742AFCC621CCF221001EB13E /* UserDefault.swift */,
+				742AFD1421CD47B9001EB13E /* SeparatorView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -273,6 +277,7 @@
 			files = (
 				742AFCD421CCF228001EB13E /* AppDelegate.swift in Sources */,
 				742AFCD121CCF228001EB13E /* ViewController.swift in Sources */,
+				742AFD1521CD47B9001EB13E /* SeparatorView.swift in Sources */,
 				742AFCC721CCF221001EB13E /* UserDefault.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				742AFD1621CD47B9001EB13E /* SeparatorView.swift in Sources */,
 				742AFD1121CCF400001EB13E /* UserDefault.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
