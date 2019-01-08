@@ -19,6 +19,9 @@
 		742AFD1321CCF46D001EB13E /* UserDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1221CCF46D001EB13E /* UserDefaultTests.swift */; };
 		742AFD1521CD47B9001EB13E /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1421CD47B9001EB13E /* SeparatorView.swift */; };
 		742AFD1621CD47B9001EB13E /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1421CD47B9001EB13E /* SeparatorView.swift */; };
+		742AFD1821CD4CAC001EB13E /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1721CD4CAC001EB13E /* NotificationObserver.swift */; };
+		742AFD1921CD4CAC001EB13E /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1721CD4CAC001EB13E /* NotificationObserver.swift */; };
+		742AFD1B21CE36AF001EB13E /* NotificationObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1A21CE36AF001EB13E /* NotificationObserverTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,8 @@
 		742AFD0921CCF3FA001EB13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		742AFD1221CCF46D001EB13E /* UserDefaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultTests.swift; sourceTree = "<group>"; };
 		742AFD1421CD47B9001EB13E /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
+		742AFD1721CD4CAC001EB13E /* NotificationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; };
+		742AFD1A21CE36AF001EB13E /* NotificationObserverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserverTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 			children = (
 				742AFCC621CCF221001EB13E /* UserDefault.swift */,
 				742AFD1421CD47B9001EB13E /* SeparatorView.swift */,
+				742AFD1721CD4CAC001EB13E /* NotificationObserver.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -129,9 +135,10 @@
 		742AFD0621CCF3FA001EB13E /* SwiftToolkitTests */ = {
 			isa = PBXGroup;
 			children = (
-				742AFD0721CCF3FA001EB13E /* SwiftToolkitTests.swift */,
 				742AFD0921CCF3FA001EB13E /* Info.plist */,
+				742AFD0721CCF3FA001EB13E /* SwiftToolkitTests.swift */,
 				742AFD1221CCF46D001EB13E /* UserDefaultTests.swift */,
+				742AFD1A21CE36AF001EB13E /* NotificationObserverTests.swift */,
 			);
 			path = SwiftToolkitTests;
 			sourceTree = "<group>";
@@ -279,6 +286,7 @@
 				742AFCD121CCF228001EB13E /* ViewController.swift in Sources */,
 				742AFD1521CD47B9001EB13E /* SeparatorView.swift in Sources */,
 				742AFCC721CCF221001EB13E /* UserDefault.swift in Sources */,
+				742AFD1821CD4CAC001EB13E /* NotificationObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +296,7 @@
 			files = (
 				742AFD1621CD47B9001EB13E /* SeparatorView.swift in Sources */,
 				742AFD1121CCF400001EB13E /* UserDefault.swift in Sources */,
+				742AFD1921CD4CAC001EB13E /* NotificationObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +306,7 @@
 			files = (
 				742AFD1321CCF46D001EB13E /* UserDefaultTests.swift in Sources */,
 				742AFD0821CCF3FA001EB13E /* SwiftToolkitTests.swift in Sources */,
+				742AFD1B21CE36AF001EB13E /* NotificationObserverTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
