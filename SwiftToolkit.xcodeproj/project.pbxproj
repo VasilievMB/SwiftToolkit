@@ -22,6 +22,8 @@
 		742AFD1821CD4CAC001EB13E /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1721CD4CAC001EB13E /* NotificationObserver.swift */; };
 		742AFD1921CD4CAC001EB13E /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1721CD4CAC001EB13E /* NotificationObserver.swift */; };
 		742AFD1B21CE36AF001EB13E /* NotificationObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1A21CE36AF001EB13E /* NotificationObserverTests.swift */; };
+		74EA4917230146A2006E6592 /* UIColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA4916230146A2006E6592 /* UIColor+RGBA.swift */; };
+		74EA491923014B38006E6592 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA491823014B38006E6592 /* UIColorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		742AFD1421CD47B9001EB13E /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
 		742AFD1721CD4CAC001EB13E /* NotificationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; };
 		742AFD1A21CE36AF001EB13E /* NotificationObserverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserverTests.swift; sourceTree = "<group>"; };
+		74EA4916230146A2006E6592 /* UIColor+RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBA.swift"; sourceTree = "<group>"; };
+		74EA491823014B38006E6592 /* UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 				742AFCC621CCF221001EB13E /* UserDefault.swift */,
 				742AFD1421CD47B9001EB13E /* SeparatorView.swift */,
 				742AFD1721CD4CAC001EB13E /* NotificationObserver.swift */,
+				74EA4916230146A2006E6592 /* UIColor+RGBA.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 				742AFD0721CCF3FA001EB13E /* SwiftToolkitTests.swift */,
 				742AFD1221CCF46D001EB13E /* UserDefaultTests.swift */,
 				742AFD1A21CE36AF001EB13E /* NotificationObserverTests.swift */,
+				74EA491823014B38006E6592 /* UIColorTests.swift */,
 			);
 			path = SwiftToolkitTests;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 				742AFD1621CD47B9001EB13E /* SeparatorView.swift in Sources */,
 				742AFD1121CCF400001EB13E /* UserDefault.swift in Sources */,
 				742AFD1921CD4CAC001EB13E /* NotificationObserver.swift in Sources */,
+				74EA4917230146A2006E6592 /* UIColor+RGBA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				742AFD1321CCF46D001EB13E /* UserDefaultTests.swift in Sources */,
+				74EA491923014B38006E6592 /* UIColorTests.swift in Sources */,
 				742AFD0821CCF3FA001EB13E /* SwiftToolkitTests.swift in Sources */,
 				742AFD1B21CE36AF001EB13E /* NotificationObserverTests.swift in Sources */,
 			);
