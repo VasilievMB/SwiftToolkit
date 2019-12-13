@@ -12,22 +12,18 @@ extension UIColor {
     
     convenience init(rgba: UInt32) {
         assert(rgba <= 0xFFFFFFFF)
-        let (r, g, b, a): (UInt8, UInt8, UInt8, UInt8) = (
-            UInt8(rgba >> 24),
-            UInt8(rgba >> 16 & 0xFF),
-            UInt8(rgba >> 8 & 0xFF),
-            UInt8(rgba & 0xFF)
-        )
+        let r = UInt8(rgba >> 24)
+        let g = UInt8(rgba >> 16 & 0xFF)
+        let b = UInt8(rgba >> 8 & 0xFF)
+        let a = UInt8(rgba & 0xFF)
         self.init(r8: r, g8: g, b8: b, a8: a)
     }
     
     convenience init(rgb: UInt32) {
         assert(rgb <= 0xFFFFFF)
-        let (r, g, b): (UInt8, UInt8, UInt8) = (
-            UInt8(rgb >> 16),
-            UInt8(rgb >> 8 & 0xFF),
-            UInt8(rgb & 0xFF)
-        )
+        let r = UInt8(rgb >> 16)
+        let g = UInt8(rgb >> 8 & 0xFF)
+        let b = UInt8(rgb & 0xFF)
         self.init(r8: r, g8: g, b8: b)
     }
     
