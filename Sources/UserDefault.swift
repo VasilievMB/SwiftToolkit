@@ -8,38 +8,39 @@
 
 import Foundation
 
-class UserDefault<T> {
+struct UserDefaultKey: RawRepresentable {
+    let rawValue: String
+}
+
+extension UserDefaultKey: ExpressibleByStringLiteral {
+    init(stringLiteral: String) {
+        rawValue = stringLiteral
+    }
+}
+
+class UserDefault<Value: PropertyListValue> {
     
     let defaults: UserDefaults
-    let key: String
-    let defaultValue: T
-    var shouldSynchronize: Bool
+    let key: UserDefaultKey
+    let defaultValue: Value
     
-    init(key: String,
-         defaultValue: T,
-         defaults: UserDefaults = UserDefaults.standard,
-         shouldSynchronize: Bool = true) {
+    init(key: UserDefaultKey,
+         defaultValue: Value,
+         defaults: UserDefaults = UserDefaults.standard) {
         self.defaultValue = defaultValue
         self.defaults = defaults
         self.key = key
-        self.shouldSynchronize = shouldSynchronize
     }
     
     var isStored: Bool {
         return storedValue != nil
     }
     
-    var storedValue: T? {
-        return defaults.object(forKey: key) as? T
+    var storedValue: Value? {
+        return defaults.object(forKey: key.rawValue) as? Value
     }
-    
-    private func syncronizeIfNeeded() {
-        if shouldSynchronize {
-            defaults.synchronize()
-        }
-    }
-    
-    var value: T {
+        
+    var value: Value {
         get {
             if let value = storedValue {
                 return value
@@ -48,14 +49,12 @@ class UserDefault<T> {
             }
         }
         set {
-            defaults.set(newValue, forKey: key)
-            syncronizeIfNeeded()
+            defaults.set(newValue, forKey: key.rawValue)
         }
     }
     
     func removeValue() {
-        defaults.removeObject(forKey: key)
-        syncronizeIfNeeded()
+        defaults.removeObject(forKey: key.rawValue)
     }
     
 }

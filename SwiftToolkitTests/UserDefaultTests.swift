@@ -13,16 +13,16 @@ fileprivate let defaultValue: Int = 0
 
 class UserDefaultTests: XCTestCase {
 
-    let userDefault = UserDefault<Int>(key: "test.key",
+    let userDefault = UserDefault<Int>(key: "testKey",
                                        defaultValue: defaultValue)
+    private var observer: UserDefaultObserver<Int>?
     
     override func setUp() {
-        userDefault.shouldSynchronize = true
         userDefault.removeValue()
     }
 
     override func tearDown() {
-        userDefault.shouldSynchronize = true
+        observer = nil
         userDefault.removeValue()
     }
 
@@ -59,4 +59,24 @@ class UserDefaultTests: XCTestCase {
         XCTAssertFalse(userDefault.isStored)
     }
 
+    func testObservation() {
+        
+        let oldValue = Int(arc4random())
+        let newValue = Int(arc4random())
+        
+        userDefault.value = oldValue
+        
+        let expectation = XCTestExpectation(description: "User default value change observed")
+        
+        observer = userDefault.observe { (old, new) in
+            XCTAssertEqual(oldValue, old)
+            XCTAssertEqual(newValue, new)
+            expectation.fulfill()
+        }
+        
+        self.userDefault.value = newValue
+                
+        wait(for: [expectation], timeout: 1)
+    }
+    
 }
