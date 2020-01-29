@@ -8,6 +8,8 @@
 
 import UIKit
 
+// MARK: - Protocols
+
 protocol TableViewCellProviding {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
 }
@@ -55,6 +57,29 @@ extension TableViewReusableHeaderFooterViewProviding {
     }
 }
 
+protocol TableViewReusableElement {
+    static var defaultReuseIdentifier: String { get }
+    static var defaultNibName: String { get }
+}
+
+extension TableViewReusableElement where Self: UIView {
+    
+    static var defaultReuseIdentifier: String {
+        return "\(Self.self)"
+    }
+    
+    static var defaultNibName: String {
+        return "\(Self.self)"
+    }
+    
+}
+
+extension UITableViewCell: TableViewReusableElement {}
+extension UITableViewHeaderFooterView: TableViewReusableElement {}
+
+
+// MARK: - Implementation classes
+
 class TableViewReusableViewProvider {
     let reuseIdentifier: String
     init(reuseIdentifier: String) {
@@ -78,17 +103,24 @@ class TableViewReusableViewNibProvider: TableViewReusableViewProvider {
 }
 
 class TableViewCellClassProvider<Cell: UITableViewCell>: TableViewReusableViewProvider, TableViewReusableCellProviding {
+    
     typealias Cell = Cell
+    
+    convenience init() {
+        self.init(reuseIdentifier: Cell.defaultReuseIdentifier)
+    }
+    
     func registerView(in tableView: UITableView) {
         tableView.register(Cell.self, forCellReuseIdentifier: reuseIdentifier)
     }
 }
 
 class TableViewCellNibProvider<Cell: UITableViewCell>: TableViewReusableViewNibProvider, TableViewReusableCellProviding {
+    
     typealias Cell = Cell
     
-    convenience init(reuseIdentifier: String, bundle: Bundle = Bundle.main) {
-        self.init(reuseIdentifier: reuseIdentifier, nibName: "\(Cell.self)", bundle: bundle)
+    convenience init(reuseIdentifier: String = Cell.defaultReuseIdentifier, bundle: Bundle = Bundle.main) {
+        self.init(reuseIdentifier: reuseIdentifier, nibName: Cell.defaultNibName, bundle: bundle)
     }
     
     func registerView(in tableView: UITableView) {
@@ -97,17 +129,24 @@ class TableViewCellNibProvider<Cell: UITableViewCell>: TableViewReusableViewNibP
 }
 
 class TableViewHeaderFooterClassProvider<View: UITableViewHeaderFooterView>: TableViewReusableViewProvider, TableViewReusableHeaderFooterViewProviding {
+    
     typealias View = View
+    
+    convenience init() {
+        self.init(reuseIdentifier: View.defaultReuseIdentifier)
+    }
+    
     func registerView(in tableView: UITableView) {
         tableView.register(View.self, forHeaderFooterViewReuseIdentifier: reuseIdentifier)
     }
 }
 
 class TableViewHeaderFooterNibProvider<View: UITableViewHeaderFooterView>: TableViewReusableViewNibProvider, TableViewReusableHeaderFooterViewProviding {
+    
     typealias View = View
     
-    convenience init(reuseIdentifier: String, bundle: Bundle = Bundle.main) {
-        self.init(reuseIdentifier: reuseIdentifier, nibName: "\(View.self)", bundle: bundle)
+    convenience init(reuseIdentifier: String = View.defaultReuseIdentifier, bundle: Bundle = Bundle.main) {
+        self.init(reuseIdentifier: reuseIdentifier, nibName: View.defaultNibName, bundle: bundle)
     }
     
     func registerView(in tableView: UITableView) {
