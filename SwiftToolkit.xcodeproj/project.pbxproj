@@ -32,6 +32,8 @@
 		74D006CF23A8DAB30077628C /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D006CD23A8D94D0077628C /* Table.swift */; };
 		74EA4917230146A2006E6592 /* UIColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA4916230146A2006E6592 /* UIColor+RGBA.swift */; };
 		74EA491923014B38006E6592 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA491823014B38006E6592 /* UIColorTests.swift */; };
+		74FA126423E1CEB7009003EE /* UIImage+SolidColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA126323E1CEB7009003EE /* UIImage+SolidColor.swift */; };
+		74FA126523E1CEB7009003EE /* UIImage+SolidColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA126323E1CEB7009003EE /* UIImage+SolidColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,7 @@
 		74D006CD23A8D94D0077628C /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		74EA4916230146A2006E6592 /* UIColor+RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBA.swift"; sourceTree = "<group>"; };
 		74EA491823014B38006E6592 /* UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
+		74FA126323E1CEB7009003EE /* UIImage+SolidColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SolidColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,7 @@
 				74EA4916230146A2006E6592 /* UIColor+RGBA.swift */,
 				74D006CD23A8D94D0077628C /* Table.swift */,
 				744A064123B9E3E40070793F /* TableReusableViewProviders.swift */,
+				74FA126323E1CEB7009003EE /* UIImage+SolidColor.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -311,6 +315,7 @@
 				74C1BE2723A39DA600445688 /* PropertyListValue.swift in Sources */,
 				742AFD1521CD47B9001EB13E /* SeparatorView.swift in Sources */,
 				742AFCC721CCF221001EB13E /* UserDefault.swift in Sources */,
+				74FA126423E1CEB7009003EE /* UIImage+SolidColor.swift in Sources */,
 				74D006CE23A8D94D0077628C /* Table.swift in Sources */,
 				742AFD1821CD4CAC001EB13E /* NotificationObserver.swift in Sources */,
 			);
@@ -322,6 +327,7 @@
 			files = (
 				742AFD1621CD47B9001EB13E /* SeparatorView.swift in Sources */,
 				74D006CF23A8DAB30077628C /* Table.swift in Sources */,
+				74FA126523E1CEB7009003EE /* UIImage+SolidColor.swift in Sources */,
 				74C1BE2523A3992B00445688 /* UserDefault+Observation.swift in Sources */,
 				742AFD1121CCF400001EB13E /* UserDefault.swift in Sources */,
 				74C1BE2423A3991D00445688 /* PropertyListValue.swift in Sources */,
