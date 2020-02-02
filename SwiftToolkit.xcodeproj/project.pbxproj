@@ -24,6 +24,10 @@
 		742AFD1B21CE36AF001EB13E /* NotificationObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1A21CE36AF001EB13E /* NotificationObserverTests.swift */; };
 		744A064223B9E3E40070793F /* TableReusableViewProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744A064123B9E3E40070793F /* TableReusableViewProviders.swift */; };
 		744A064323B9E3E70070793F /* TableReusableViewProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744A064123B9E3E40070793F /* TableReusableViewProviders.swift */; };
+		746AF80A23E7134F00770A10 /* UITableView+AttributedTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746AF80923E7134F00770A10 /* UITableView+AttributedTitle.swift */; };
+		746AF80B23E7134F00770A10 /* UITableView+AttributedTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746AF80923E7134F00770A10 /* UITableView+AttributedTitle.swift */; };
+		746AF80E23E7150A00770A10 /* UITableView+IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746AF80D23E7150A00770A10 /* UITableView+IndexPath.swift */; };
+		746AF80F23E7150A00770A10 /* UITableView+IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746AF80D23E7150A00770A10 /* UITableView+IndexPath.swift */; };
 		74C1BE2423A3991D00445688 /* PropertyListValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1BE2023A3957F00445688 /* PropertyListValue.swift */; };
 		74C1BE2523A3992B00445688 /* UserDefault+Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1BE2223A395CE00445688 /* UserDefault+Observation.swift */; };
 		74C1BE2623A39DA400445688 /* UserDefault+Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1BE2223A395CE00445688 /* UserDefault+Observation.swift */; };
@@ -67,6 +71,8 @@
 		742AFD1721CD4CAC001EB13E /* NotificationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; };
 		742AFD1A21CE36AF001EB13E /* NotificationObserverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserverTests.swift; sourceTree = "<group>"; };
 		744A064123B9E3E40070793F /* TableReusableViewProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableReusableViewProviders.swift; sourceTree = "<group>"; };
+		746AF80923E7134F00770A10 /* UITableView+AttributedTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+AttributedTitle.swift"; sourceTree = "<group>"; };
+		746AF80D23E7150A00770A10 /* UITableView+IndexPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+IndexPath.swift"; sourceTree = "<group>"; };
 		74C1BE2023A3957F00445688 /* PropertyListValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListValue.swift; sourceTree = "<group>"; };
 		74C1BE2223A395CE00445688 /* UserDefault+Observation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Observation.swift"; sourceTree = "<group>"; };
 		74D006CD23A8D94D0077628C /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
@@ -136,6 +142,8 @@
 				744A064123B9E3E40070793F /* TableReusableViewProviders.swift */,
 				74FA126323E1CEB7009003EE /* UIImage+SolidColor.swift */,
 				74FA126623E1CF96009003EE /* UIImage+RoundedRect.swift */,
+				746AF80923E7134F00770A10 /* UITableView+AttributedTitle.swift */,
+				746AF80D23E7150A00770A10 /* UITableView+IndexPath.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -322,6 +330,8 @@
 				74FA126723E1CF96009003EE /* UIImage+RoundedRect.swift in Sources */,
 				74FA126423E1CEB7009003EE /* UIImage+SolidColor.swift in Sources */,
 				74D006CE23A8D94D0077628C /* Table.swift in Sources */,
+				746AF80E23E7150A00770A10 /* UITableView+IndexPath.swift in Sources */,
+				746AF80A23E7134F00770A10 /* UITableView+AttributedTitle.swift in Sources */,
 				742AFD1821CD4CAC001EB13E /* NotificationObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +342,8 @@
 			files = (
 				742AFD1621CD47B9001EB13E /* SeparatorView.swift in Sources */,
 				74D006CF23A8DAB30077628C /* Table.swift in Sources */,
+				746AF80B23E7134F00770A10 /* UITableView+AttributedTitle.swift in Sources */,
+				746AF80F23E7150A00770A10 /* UITableView+IndexPath.swift in Sources */,
 				74FA126523E1CEB7009003EE /* UIImage+SolidColor.swift in Sources */,
 				74C1BE2523A3992B00445688 /* UserDefault+Observation.swift in Sources */,
 				742AFD1121CCF400001EB13E /* UserDefault.swift in Sources */,
