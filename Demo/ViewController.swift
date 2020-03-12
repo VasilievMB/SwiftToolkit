@@ -8,18 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     let userDefault = UserDefault<Int>(key: "some_key",
                                        defaultValue: 0)
     private var observer: UserDefaultObserver<Int>?
         
+    @IBOutlet weak var keyboardAvoidingView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
         addSeparatorView()
         testUserDefault()
         addRoundedRectImage()
+        
+        let keyboardGuide = KeyboardLayoutGuide()
+        keyboardGuide.add(to: view)
+        
+        keyboardAvoidingView.bottomAnchor.constraint(lessThanOrEqualTo: keyboardGuide.topAnchor, constant: -8).isActive = true
     }
     
     private func addSeparatorView() {
@@ -50,6 +57,11 @@ class ViewController: UIViewController {
         })
         
         userDefault.value = 2
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
     }
 }
 

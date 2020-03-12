@@ -28,6 +28,10 @@
 		746AF80B23E7134F00770A10 /* UITableView+AttributedTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746AF80923E7134F00770A10 /* UITableView+AttributedTitle.swift */; };
 		746AF80E23E7150A00770A10 /* UITableView+IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746AF80D23E7150A00770A10 /* UITableView+IndexPath.swift */; };
 		746AF80F23E7150A00770A10 /* UITableView+IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746AF80D23E7150A00770A10 /* UITableView+IndexPath.swift */; };
+		74771144241A39B500A2870B /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74771143241A39B500A2870B /* Keyboard.swift */; };
+		74771145241A39B500A2870B /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74771143241A39B500A2870B /* Keyboard.swift */; };
+		74771147241A486100A2870B /* KeyboardLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74771146241A486100A2870B /* KeyboardLayoutGuide.swift */; };
+		74771148241A486100A2870B /* KeyboardLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74771146241A486100A2870B /* KeyboardLayoutGuide.swift */; };
 		74C1BE2423A3991D00445688 /* PropertyListValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1BE2023A3957F00445688 /* PropertyListValue.swift */; };
 		74C1BE2523A3992B00445688 /* UserDefault+Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1BE2223A395CE00445688 /* UserDefault+Observation.swift */; };
 		74C1BE2623A39DA400445688 /* UserDefault+Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1BE2223A395CE00445688 /* UserDefault+Observation.swift */; };
@@ -73,6 +77,8 @@
 		744A064123B9E3E40070793F /* TableReusableViewProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableReusableViewProviders.swift; sourceTree = "<group>"; };
 		746AF80923E7134F00770A10 /* UITableView+AttributedTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+AttributedTitle.swift"; sourceTree = "<group>"; };
 		746AF80D23E7150A00770A10 /* UITableView+IndexPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+IndexPath.swift"; sourceTree = "<group>"; };
+		74771143241A39B500A2870B /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		74771146241A486100A2870B /* KeyboardLayoutGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutGuide.swift; sourceTree = "<group>"; };
 		74C1BE2023A3957F00445688 /* PropertyListValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListValue.swift; sourceTree = "<group>"; };
 		74C1BE2223A395CE00445688 /* UserDefault+Observation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Observation.swift"; sourceTree = "<group>"; };
 		74D006CD23A8D94D0077628C /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
@@ -137,6 +143,8 @@
 				74C1BE2023A3957F00445688 /* PropertyListValue.swift */,
 				742AFD1421CD47B9001EB13E /* SeparatorView.swift */,
 				742AFD1721CD4CAC001EB13E /* NotificationObserver.swift */,
+				74771143241A39B500A2870B /* Keyboard.swift */,
+				74771146241A486100A2870B /* KeyboardLayoutGuide.swift */,
 				74EA4916230146A2006E6592 /* UIColor+RGBA.swift */,
 				74D006CD23A8D94D0077628C /* Table.swift */,
 				744A064123B9E3E40070793F /* TableReusableViewProviders.swift */,
@@ -322,9 +330,11 @@
 			files = (
 				742AFCD421CCF228001EB13E /* AppDelegate.swift in Sources */,
 				744A064223B9E3E40070793F /* TableReusableViewProviders.swift in Sources */,
+				74771144241A39B500A2870B /* Keyboard.swift in Sources */,
 				74C1BE2623A39DA400445688 /* UserDefault+Observation.swift in Sources */,
 				742AFCD121CCF228001EB13E /* ViewController.swift in Sources */,
 				74C1BE2723A39DA600445688 /* PropertyListValue.swift in Sources */,
+				74771147241A486100A2870B /* KeyboardLayoutGuide.swift in Sources */,
 				742AFD1521CD47B9001EB13E /* SeparatorView.swift in Sources */,
 				742AFCC721CCF221001EB13E /* UserDefault.swift in Sources */,
 				74FA126723E1CF96009003EE /* UIImage+RoundedRect.swift in Sources */,
@@ -345,6 +355,7 @@
 				746AF80B23E7134F00770A10 /* UITableView+AttributedTitle.swift in Sources */,
 				746AF80F23E7150A00770A10 /* UITableView+IndexPath.swift in Sources */,
 				74FA126523E1CEB7009003EE /* UIImage+SolidColor.swift in Sources */,
+				74771145241A39B500A2870B /* Keyboard.swift in Sources */,
 				74C1BE2523A3992B00445688 /* UserDefault+Observation.swift in Sources */,
 				742AFD1121CCF400001EB13E /* UserDefault.swift in Sources */,
 				74FA126823E1CF96009003EE /* UIImage+RoundedRect.swift in Sources */,
@@ -352,6 +363,7 @@
 				742AFD1921CD4CAC001EB13E /* NotificationObserver.swift in Sources */,
 				744A064323B9E3E70070793F /* TableReusableViewProviders.swift in Sources */,
 				74EA4917230146A2006E6592 /* UIColor+RGBA.swift in Sources */,
+				74771148241A486100A2870B /* KeyboardLayoutGuide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
