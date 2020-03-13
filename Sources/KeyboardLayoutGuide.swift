@@ -17,7 +17,7 @@ class KeyboardLayoutGuide: UILayoutGuide {
     
     override var owningView: UIView? {
         didSet {
-            if let view = owningView {
+            if let view = owningView, owningView != oldValue {
                 didMove(to: view)
             }
         }

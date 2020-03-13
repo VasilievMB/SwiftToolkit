@@ -10,28 +10,29 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
-    let userDefault = UserDefault<Int>(key: "some_key",
-                                       defaultValue: 0)
+    private let userDefault = UserDefault<Int>(key: "some_key", defaultValue: 0)
     private var observer: UserDefaultObserver<Int>?
-        
-    @IBOutlet weak var keyboardAvoidingView: UIView!
-    
+            
     override func viewDidLoad() {
         super.viewDidLoad()
     
         addSeparatorView()
         testUserDefault()
-        addRoundedRectImage()
         
+        let imageView = addRoundedRectImage()
+        
+        addKeyboardGuide(with: imageView)
+    }
+    
+    private func addKeyboardGuide(with view: UIView) {
         let keyboardGuide = KeyboardLayoutGuide()
-        keyboardGuide.add(to: view)
-        
-        keyboardAvoidingView.bottomAnchor.constraint(lessThanOrEqualTo: keyboardGuide.topAnchor, constant: -8).isActive = true
+        self.view.addLayoutGuide(keyboardGuide)
+        view.bottomAnchor.constraint(lessThanOrEqualTo: keyboardGuide.topAnchor, constant: -8).isActive = true
     }
     
     private func addSeparatorView() {
         let separatorView = SeparatorView()
-        SeparatorView.appearance().backgroundColor = UIColor.green
+        SeparatorView.appearance().backgroundColor = UIColor.lightGray
         separatorView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(separatorView)
@@ -43,10 +44,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
             ])
     }
     
-    private func addRoundedRectImage() {
-        let imageView = UIImageView(frame: CGRect(x: 20, y: 100, width: 100, height: 44))
-        imageView.image = UIImage.roundedRect(fillColor: UIColor.gray, cornerRadius: 6)
+    @discardableResult
+    private func addRoundedRectImage() -> UIImageView {
+        let imageView = UIImageView(image: UIImage.roundedRect(fillColor: UIColor.magenta, cornerRadius: 6))
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(imageView)
+        
+        let bottomConstraint = view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 10)
+        bottomConstraint.priority = .defaultHigh
+        NSLayoutConstraint.activate([
+            imageView.widthAnchor.constraint(equalToConstant: 200),
+            imageView.heightAnchor.constraint(equalToConstant: 50),
+            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            bottomConstraint
+        ])
+        
+        return imageView
     }
     
     private func testUserDefault() {
