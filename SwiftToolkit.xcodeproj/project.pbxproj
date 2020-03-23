@@ -35,6 +35,8 @@
 		7479F4B9241B553700C9D248 /* Comparable+Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7479F4B8241B553700C9D248 /* Comparable+Clamp.swift */; };
 		7479F4BA241B553700C9D248 /* Comparable+Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7479F4B8241B553700C9D248 /* Comparable+Clamp.swift */; };
 		7479F4BC241B557700C9D248 /* ClampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7479F4BB241B557700C9D248 /* ClampTests.swift */; };
+		7479F4BE241B576300C9D248 /* UIColor+HSBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7479F4BD241B576300C9D248 /* UIColor+HSBA.swift */; };
+		7479F4BF241B576300C9D248 /* UIColor+HSBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7479F4BD241B576300C9D248 /* UIColor+HSBA.swift */; };
 		74C1BE2423A3991D00445688 /* PropertyListValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1BE2023A3957F00445688 /* PropertyListValue.swift */; };
 		74C1BE2523A3992B00445688 /* UserDefault+Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1BE2223A395CE00445688 /* UserDefault+Observation.swift */; };
 		74C1BE2623A39DA400445688 /* UserDefault+Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1BE2223A395CE00445688 /* UserDefault+Observation.swift */; };
@@ -84,6 +86,7 @@
 		74771146241A486100A2870B /* KeyboardLayoutGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutGuide.swift; sourceTree = "<group>"; };
 		7479F4B8241B553700C9D248 /* Comparable+Clamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamp.swift"; sourceTree = "<group>"; };
 		7479F4BB241B557700C9D248 /* ClampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClampTests.swift; sourceTree = "<group>"; };
+		7479F4BD241B576300C9D248 /* UIColor+HSBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HSBA.swift"; sourceTree = "<group>"; };
 		74C1BE2023A3957F00445688 /* PropertyListValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListValue.swift; sourceTree = "<group>"; };
 		74C1BE2223A395CE00445688 /* UserDefault+Observation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Observation.swift"; sourceTree = "<group>"; };
 		74D006CD23A8D94D0077628C /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
@@ -151,6 +154,7 @@
 				74771143241A39B500A2870B /* Keyboard.swift */,
 				74771146241A486100A2870B /* KeyboardLayoutGuide.swift */,
 				74EA4916230146A2006E6592 /* UIColor+RGBA.swift */,
+				7479F4BD241B576300C9D248 /* UIColor+HSBA.swift */,
 				74D006CD23A8D94D0077628C /* Table.swift */,
 				744A064123B9E3E40070793F /* TableReusableViewProviders.swift */,
 				74FA126323E1CEB7009003EE /* UIImage+SolidColor.swift */,
@@ -338,6 +342,7 @@
 				742AFCD421CCF228001EB13E /* AppDelegate.swift in Sources */,
 				744A064223B9E3E40070793F /* TableReusableViewProviders.swift in Sources */,
 				74771144241A39B500A2870B /* Keyboard.swift in Sources */,
+				7479F4BE241B576300C9D248 /* UIColor+HSBA.swift in Sources */,
 				74C1BE2623A39DA400445688 /* UserDefault+Observation.swift in Sources */,
 				742AFCD121CCF228001EB13E /* ViewController.swift in Sources */,
 				74C1BE2723A39DA600445688 /* PropertyListValue.swift in Sources */,
@@ -361,6 +366,7 @@
 				742AFD1621CD47B9001EB13E /* SeparatorView.swift in Sources */,
 				74D006CF23A8DAB30077628C /* Table.swift in Sources */,
 				746AF80B23E7134F00770A10 /* UITableView+AttributedTitle.swift in Sources */,
+				7479F4BF241B576300C9D248 /* UIColor+HSBA.swift in Sources */,
 				746AF80F23E7150A00770A10 /* UITableView+IndexPath.swift in Sources */,
 				74FA126523E1CEB7009003EE /* UIImage+SolidColor.swift in Sources */,
 				74771145241A39B500A2870B /* Keyboard.swift in Sources */,
