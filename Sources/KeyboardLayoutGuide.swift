@@ -26,7 +26,15 @@ class KeyboardLayoutGuide: UILayoutGuide {
     private var lastKeyboardInfo: Keyboard.Info?
     
     private func didMove(to owningView: UIView) {
+        
         heightConstraint.isActive = true
+        
+        NSLayoutConstraint.activate([
+            self.leadingAnchor.constraint(equalTo: owningView.leadingAnchor),
+            self.trailingAnchor.constraint(equalTo: owningView.trailingAnchor),
+            self.bottomAnchor.constraint(equalTo: owningView.bottomAnchor),
+        ])
+        
         if let info = lastKeyboardInfo {
             update(info: info, owningView: owningView, animated: false)
         }
@@ -57,14 +65,5 @@ class KeyboardLayoutGuide: UILayoutGuide {
         }
         lastKeyboardInfo = info
         update(info: info, owningView: view, animated: true)
-    }
-    
-    func add(to view: UIView) {
-        view.addLayoutGuide(self)
-        NSLayoutConstraint.activate([
-            self.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            self.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            self.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-        ])
     }
 }
