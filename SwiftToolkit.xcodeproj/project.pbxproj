@@ -22,6 +22,7 @@
 		742AFD1821CD4CAC001EB13E /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1721CD4CAC001EB13E /* NotificationObserver.swift */; };
 		742AFD1921CD4CAC001EB13E /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1721CD4CAC001EB13E /* NotificationObserver.swift */; };
 		742AFD1B21CE36AF001EB13E /* NotificationObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1A21CE36AF001EB13E /* NotificationObserverTests.swift */; };
+		744816232452CCF60042ADBA /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744816222452CCF60042ADBA /* NSAttributedString+Extensions.swift */; };
 		744A064223B9E3E40070793F /* TableReusableViewProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744A064123B9E3E40070793F /* TableReusableViewProviders.swift */; };
 		744A064323B9E3E70070793F /* TableReusableViewProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744A064123B9E3E40070793F /* TableReusableViewProviders.swift */; };
 		746AF80A23E7134F00770A10 /* UITableView+AttributedTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746AF80923E7134F00770A10 /* UITableView+AttributedTitle.swift */; };
@@ -79,6 +80,7 @@
 		742AFD1421CD47B9001EB13E /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
 		742AFD1721CD4CAC001EB13E /* NotificationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; };
 		742AFD1A21CE36AF001EB13E /* NotificationObserverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserverTests.swift; sourceTree = "<group>"; };
+		744816222452CCF60042ADBA /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
 		744A064123B9E3E40070793F /* TableReusableViewProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableReusableViewProviders.swift; sourceTree = "<group>"; };
 		746AF80923E7134F00770A10 /* UITableView+AttributedTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+AttributedTitle.swift"; sourceTree = "<group>"; };
 		746AF80D23E7150A00770A10 /* UITableView+IndexPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+IndexPath.swift"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				746AF80923E7134F00770A10 /* UITableView+AttributedTitle.swift */,
 				746AF80D23E7150A00770A10 /* UITableView+IndexPath.swift */,
 				7479F4B8241B553700C9D248 /* Comparable+Clamp.swift */,
+				744816222452CCF60042ADBA /* NSAttributedString+Extensions.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				742AFCD421CCF228001EB13E /* AppDelegate.swift in Sources */,
+				744816232452CCF60042ADBA /* NSAttributedString+Extensions.swift in Sources */,
 				744A064223B9E3E40070793F /* TableReusableViewProviders.swift in Sources */,
 				74771144241A39B500A2870B /* Keyboard.swift in Sources */,
 				7479F4BE241B576300C9D248 /* UIColor+HSBA.swift in Sources */,
