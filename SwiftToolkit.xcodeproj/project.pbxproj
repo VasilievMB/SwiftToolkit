@@ -22,7 +22,6 @@
 		742AFD1821CD4CAC001EB13E /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1721CD4CAC001EB13E /* NotificationObserver.swift */; };
 		742AFD1921CD4CAC001EB13E /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1721CD4CAC001EB13E /* NotificationObserver.swift */; };
 		742AFD1B21CE36AF001EB13E /* NotificationObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFD1A21CE36AF001EB13E /* NotificationObserverTests.swift */; };
-		744816232452CCF60042ADBA /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744816222452CCF60042ADBA /* NSAttributedString+Extensions.swift */; };
 		744A064223B9E3E40070793F /* TableReusableViewProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744A064123B9E3E40070793F /* TableReusableViewProviders.swift */; };
 		744A064323B9E3E70070793F /* TableReusableViewProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744A064123B9E3E40070793F /* TableReusableViewProviders.swift */; };
 		746AF80A23E7134F00770A10 /* UITableView+AttributedTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746AF80923E7134F00770A10 /* UITableView+AttributedTitle.swift */; };
@@ -44,6 +43,8 @@
 		74C1BE2723A39DA600445688 /* PropertyListValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1BE2023A3957F00445688 /* PropertyListValue.swift */; };
 		74D006CE23A8D94D0077628C /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D006CD23A8D94D0077628C /* Table.swift */; };
 		74D006CF23A8DAB30077628C /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D006CD23A8D94D0077628C /* Table.swift */; };
+		74E0AD862536C04400A9318F /* NSAttributedStringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E0AD852536C04400A9318F /* NSAttributedStringExtensionsTests.swift */; };
+		74E0AD872536C1D000A9318F /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744816222452CCF60042ADBA /* NSAttributedString+Extensions.swift */; };
 		74EA4917230146A2006E6592 /* UIColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA4916230146A2006E6592 /* UIColor+RGBA.swift */; };
 		74EA491923014B38006E6592 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA491823014B38006E6592 /* UIColorTests.swift */; };
 		74FA126423E1CEB7009003EE /* UIImage+SolidColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA126323E1CEB7009003EE /* UIImage+SolidColor.swift */; };
@@ -92,6 +93,7 @@
 		74C1BE2023A3957F00445688 /* PropertyListValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListValue.swift; sourceTree = "<group>"; };
 		74C1BE2223A395CE00445688 /* UserDefault+Observation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Observation.swift"; sourceTree = "<group>"; };
 		74D006CD23A8D94D0077628C /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		74E0AD852536C04400A9318F /* NSAttributedStringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensionsTests.swift; sourceTree = "<group>"; };
 		74EA4916230146A2006E6592 /* UIColor+RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBA.swift"; sourceTree = "<group>"; };
 		74EA491823014B38006E6592 /* UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
 		74FA126323E1CEB7009003EE /* UIImage+SolidColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SolidColor.swift"; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				742AFD1A21CE36AF001EB13E /* NotificationObserverTests.swift */,
 				74EA491823014B38006E6592 /* UIColorTests.swift */,
 				7479F4BB241B557700C9D248 /* ClampTests.swift */,
+				74E0AD852536C04400A9318F /* NSAttributedStringExtensionsTests.swift */,
 			);
 			path = SwiftToolkitTests;
 			sourceTree = "<group>";
@@ -343,7 +346,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				742AFCD421CCF228001EB13E /* AppDelegate.swift in Sources */,
-				744816232452CCF60042ADBA /* NSAttributedString+Extensions.swift in Sources */,
 				744A064223B9E3E40070793F /* TableReusableViewProviders.swift in Sources */,
 				74771144241A39B500A2870B /* Keyboard.swift in Sources */,
 				7479F4BE241B576300C9D248 /* UIColor+HSBA.swift in Sources */,
@@ -374,6 +376,7 @@
 				746AF80F23E7150A00770A10 /* UITableView+IndexPath.swift in Sources */,
 				74FA126523E1CEB7009003EE /* UIImage+SolidColor.swift in Sources */,
 				74771145241A39B500A2870B /* Keyboard.swift in Sources */,
+				74E0AD872536C1D000A9318F /* NSAttributedString+Extensions.swift in Sources */,
 				7479F4BA241B553700C9D248 /* Comparable+Clamp.swift in Sources */,
 				74C1BE2523A3992B00445688 /* UserDefault+Observation.swift in Sources */,
 				742AFD1121CCF400001EB13E /* UserDefault.swift in Sources */,
@@ -395,6 +398,7 @@
 				7479F4BC241B557700C9D248 /* ClampTests.swift in Sources */,
 				742AFD0821CCF3FA001EB13E /* SwiftToolkitTests.swift in Sources */,
 				742AFD1B21CE36AF001EB13E /* NotificationObserverTests.swift in Sources */,
+				74E0AD862536C04400A9318F /* NSAttributedStringExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
