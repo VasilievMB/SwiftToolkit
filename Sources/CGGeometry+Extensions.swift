@@ -87,8 +87,12 @@ public extension CGPoint {
         self.init(x: vector.dx, y: vector.dy)
     }
     
+    func distanceSquared(to point: CGPoint) -> CGFloat {
+        return (CGVector(point: point) - CGVector(point: self)).lengthSquared()
+    }
+    
     func distance(to point: CGPoint) -> CGFloat {
-        return (CGVector(point: point) - CGVector(point: self)).length()
+        return sqrt(distanceSquared(to: point))
     }
     
     func offset(by vector: CGVector) -> CGPoint {
