@@ -3,7 +3,7 @@
 //  SwiftToolkit
 //
 //  Created by Mikhail on 21/12/2018.
-//  Copyright © 2018 glvrzzz. All rights reserved.
+//  Copyright © 2018 Mikhail. All rights reserved.
 //
 
 import Foundation
@@ -15,7 +15,7 @@ public class NotificationObserver {
     let center: NotificationCenter
     let name: NSNotification.Name
     let queue: OperationQueue?
-    private(set) var handler: Handler?
+    private var handler: Handler?
     private var observer: NSObjectProtocol?
     
     init(center: NotificationCenter = NotificationCenter.default,

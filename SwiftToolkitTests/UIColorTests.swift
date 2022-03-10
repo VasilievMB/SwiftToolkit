@@ -3,7 +3,7 @@
 //  SwiftToolkitTests
 //
 //  Created by Mikhail on 12/08/2019.
-//  Copyright © 2019 glvrzzz. All rights reserved.
+//  Copyright © 2019 Mikhail. All rights reserved.
 //
 
 import XCTest

@@ -3,7 +3,7 @@
 //  Demo
 //
 //  Created by Mikhail on 17/12/2019.
-//  Copyright © 2019 glvrzzz. All rights reserved.
+//  Copyright © 2019 Mikhail. All rights reserved.
 //
 
 import UIKit

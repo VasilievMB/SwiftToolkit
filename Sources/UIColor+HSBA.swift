@@ -3,7 +3,7 @@
 //  SwiftToolkit
 //
 //  Created by Mikhail on 13.03.2020.
-//  Copyright © 2020 glvrzzz. All rights reserved.
+//  Copyright © 2020 Mikhail. All rights reserved.
 //
 
 import UIKit
