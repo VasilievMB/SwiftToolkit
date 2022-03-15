@@ -9,7 +9,6 @@
 import XCTest
 @testable import SwiftToolkit
 
-
 class CGGeometryExtensionsTests: XCTestCase {
     
     private let accuracy: CGFloat = 1e-15
