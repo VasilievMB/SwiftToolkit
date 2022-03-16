@@ -10,6 +10,8 @@
 		7407EEC627E079BE0025C363 /* SKProductSubscriptionPeriodFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407EEC527E079BD0025C363 /* SKProductSubscriptionPeriodFormatter.swift */; };
 		7407EEC827E07BBA0025C363 /* SKProductSubscriptionPeriodFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407EEC727E07BBA0025C363 /* SKProductSubscriptionPeriodFormatterTests.swift */; };
 		7407EECA27E086990025C363 /* UIEdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407EEC927E086990025C363 /* UIEdgeInsets+Extensions.swift */; };
+		7407EECC27E1C72A0025C363 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407EECB27E1C72A0025C363 /* Collection+Extensions.swift */; };
+		7407EECE27E1C9A00025C363 /* CollectionExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407EECD27E1C9A00025C363 /* CollectionExtensionsTests.swift */; };
 		742AFCC721CCF221001EB13E /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFCC621CCF221001EB13E /* UserDefault.swift */; };
 		742AFCD121CCF228001EB13E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFCCA21CCF228001EB13E /* ViewController.swift */; };
 		742AFCD221CCF228001EB13E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 742AFCCB21CCF228001EB13E /* LaunchScreen.storyboard */; };
@@ -73,6 +75,8 @@
 		7407EEC527E079BD0025C363 /* SKProductSubscriptionPeriodFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKProductSubscriptionPeriodFormatter.swift; sourceTree = "<group>"; };
 		7407EEC727E07BBA0025C363 /* SKProductSubscriptionPeriodFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKProductSubscriptionPeriodFormatterTests.swift; sourceTree = "<group>"; };
 		7407EEC927E086990025C363 /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
+		7407EECB27E1C72A0025C363 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		7407EECD27E1C9A00025C363 /* CollectionExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensionsTests.swift; sourceTree = "<group>"; };
 		742AFC8321CCEF22001EB13E /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		742AFCC621CCF221001EB13E /* UserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		742AFCCA21CCF228001EB13E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 				748D6C9C25397E9600061DF5 /* NSLayoutConstraint+Priority.swift */,
 				7407EEC527E079BD0025C363 /* SKProductSubscriptionPeriodFormatter.swift */,
 				7407EEC927E086990025C363 /* UIEdgeInsets+Extensions.swift */,
+				7407EECB27E1C72A0025C363 /* Collection+Extensions.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				74E0AD852536C04400A9318F /* NSAttributedStringExtensionsTests.swift */,
 				748D6C9A25396F6700061DF5 /* CGGeometryExtensionsTests.swift */,
 				7407EEC727E07BBA0025C363 /* SKProductSubscriptionPeriodFormatterTests.swift */,
+				7407EECD27E1C9A00025C363 /* CollectionExtensionsTests.swift */,
 			);
 			path = SwiftToolkitTests;
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 				742AFD1621CD47B9001EB13E /* SeparatorView.swift in Sources */,
 				748D6C992539665B00061DF5 /* CGGeometry+Extensions.swift in Sources */,
 				74D006CF23A8DAB30077628C /* Table.swift in Sources */,
+				7407EECC27E1C72A0025C363 /* Collection+Extensions.swift in Sources */,
 				746AF80B23E7134F00770A10 /* UITableView+AttributedTitle.swift in Sources */,
 				7407EEC627E079BE0025C363 /* SKProductSubscriptionPeriodFormatter.swift in Sources */,
 				7479F4BF241B576300C9D248 /* UIColor+HSBA.swift in Sources */,
@@ -417,6 +424,7 @@
 			files = (
 				7407EEC827E07BBA0025C363 /* SKProductSubscriptionPeriodFormatterTests.swift in Sources */,
 				742AFD1321CCF46D001EB13E /* UserDefaultTests.swift in Sources */,
+				7407EECE27E1C9A00025C363 /* CollectionExtensionsTests.swift in Sources */,
 				74EA491923014B38006E6592 /* UIColorTests.swift in Sources */,
 				7479F4BC241B557700C9D248 /* ClampTests.swift in Sources */,
 				742AFD0821CCF3FA001EB13E /* SwiftToolkitTests.swift in Sources */,
