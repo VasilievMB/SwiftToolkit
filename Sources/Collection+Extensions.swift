@@ -34,3 +34,21 @@ public extension Collection {
     }
     
 }
+
+public extension Collection where Element: Equatable {
+    
+    func indices(of element: Element) -> [Index] {
+        return indices.filter { self[$0] == element }
+    }
+    
+}
+
+public extension RangeReplaceableCollection where Element: Equatable {
+    
+    mutating func remove(_ element: Element) {
+        while let index = firstIndex(of: element) {
+            remove(at: index)
+        }
+    }
+    
+}
