@@ -8,27 +8,27 @@
 
 import Foundation
 
-public typealias StringAttributes = [ NSAttributedString.Key : Any ]
-
-extension String {
+public extension String {
     
-    public func attributed(with attributes: StringAttributes) -> NSAttributedString {
+    func attributed(with attributes: NSAttributedString.Attributes) -> NSAttributedString {
         return NSAttributedString(string: self, attributes: attributes)
     }
     
 }
 
-extension NSAttributedString {
+public extension NSAttributedString {
     
-    public var fullRange: NSRange {
+    typealias Attributes = [ NSAttributedString.Key : Any ]
+    
+    var fullRange: NSRange {
         return NSRange(location: 0, length: length)
     }
     
 }
 
-extension Array where Self.Element == NSAttributedString {
+public extension Array where Self.Element == NSAttributedString {
 
-    public func joined() -> NSAttributedString {
+    func joined() -> NSAttributedString {
         let result = NSMutableAttributedString()
         result.beginEditing()
         for string in self {
@@ -38,7 +38,7 @@ extension Array where Self.Element == NSAttributedString {
         return result
     }
     
-    public func joined(separator: NSAttributedString) -> NSAttributedString {
+    func joined(separator: NSAttributedString) -> NSAttributedString {
         let result = NSMutableAttributedString()
         result.beginEditing()
         let lastIndex = endIndex - 1
@@ -52,14 +52,14 @@ extension Array where Self.Element == NSAttributedString {
         return result
     }
     
-    public func joined(separator: String) -> NSAttributedString {
+    func joined(separator: String) -> NSAttributedString {
         let result = NSMutableAttributedString()
         result.beginEditing()
         let lastIndex = endIndex - 1
         for (index, string) in enumerated() {
             result.append(string)
             if index != lastIndex {
-                var endingAttributes: StringAttributes?
+                var endingAttributes: NSAttributedString.Attributes?
                 string.enumerateAttributes(in: string.fullRange, options: .reverse) { (attributes, _, stop) in
                     endingAttributes = attributes
                     stop.pointee = true
