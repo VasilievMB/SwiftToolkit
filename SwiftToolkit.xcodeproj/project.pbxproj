@@ -55,6 +55,7 @@
 		74C1BE2723A39DA600445688 /* PropertyListValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1BE2023A3957F00445688 /* PropertyListValue.swift */; };
 		74D006CE23A8D94D0077628C /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D006CD23A8D94D0077628C /* Table.swift */; };
 		74D006CF23A8DAB30077628C /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D006CD23A8D94D0077628C /* Table.swift */; };
+		74DFDFA927E98BCB00798E47 /* UIViewController+TopMostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DFDFA827E98BCB00798E47 /* UIViewController+TopMostViewController.swift */; };
 		74E0AD862536C04400A9318F /* NSAttributedStringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E0AD852536C04400A9318F /* NSAttributedStringExtensionsTests.swift */; };
 		74E0AD872536C1D000A9318F /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744816222452CCF60042ADBA /* NSAttributedString+Extensions.swift */; };
 		74EA4917230146A2006E6592 /* UIColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA4916230146A2006E6592 /* UIColor+RGBA.swift */; };
@@ -117,6 +118,7 @@
 		74C1BE2023A3957F00445688 /* PropertyListValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListValue.swift; sourceTree = "<group>"; };
 		74C1BE2223A395CE00445688 /* UserDefault+Observation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Observation.swift"; sourceTree = "<group>"; };
 		74D006CD23A8D94D0077628C /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		74DFDFA827E98BCB00798E47 /* UIViewController+TopMostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopMostViewController.swift"; sourceTree = "<group>"; };
 		74E0AD852536C04400A9318F /* NSAttributedStringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensionsTests.swift; sourceTree = "<group>"; };
 		74EA4916230146A2006E6592 /* UIColor+RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBA.swift"; sourceTree = "<group>"; };
 		74EA491823014B38006E6592 /* UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				746AF80923E7134F00770A10 /* UITableView+AttributedTitle.swift */,
 				746AF80D23E7150A00770A10 /* UITableView+IndexPath.swift */,
 				7407EEC927E086990025C363 /* UIEdgeInsets+Extensions.swift */,
+				74DFDFA827E98BCB00798E47 /* UIViewController+TopMostViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				746AF80B23E7134F00770A10 /* UITableView+AttributedTitle.swift in Sources */,
 				7407EEC627E079BE0025C363 /* SKProductSubscriptionPeriodFormatter.swift in Sources */,
 				7479F4BF241B576300C9D248 /* UIColor+HSBA.swift in Sources */,
+				74DFDFA927E98BCB00798E47 /* UIViewController+TopMostViewController.swift in Sources */,
 				746AF80F23E7150A00770A10 /* UITableView+IndexPath.swift in Sources */,
 				7407EED127E1D45D0025C363 /* NSLayoutConstraint+Convenience.swift in Sources */,
 				74FA126523E1CEB7009003EE /* UIImage+SolidColor.swift in Sources */,
