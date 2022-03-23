@@ -57,6 +57,7 @@
 		74D006CF23A8DAB30077628C /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D006CD23A8D94D0077628C /* Table.swift */; };
 		74DFDFA927E98BCB00798E47 /* UIViewController+TopMostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DFDFA827E98BCB00798E47 /* UIViewController+TopMostViewController.swift */; };
 		74DFDFAB27E9CF0600798E47 /* UIEdgeInsetsExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DFDFAA27E9CF0600798E47 /* UIEdgeInsetsExtensionsTests.swift */; };
+		74DFDFAD27EADE9800798E47 /* DataAppendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DFDFAC27EADE9800798E47 /* DataAppendTests.swift */; };
 		74E0AD862536C04400A9318F /* NSAttributedStringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E0AD852536C04400A9318F /* NSAttributedStringExtensionsTests.swift */; };
 		74E0AD872536C1D000A9318F /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744816222452CCF60042ADBA /* NSAttributedString+Extensions.swift */; };
 		74EA4917230146A2006E6592 /* UIColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA4916230146A2006E6592 /* UIColor+RGBA.swift */; };
@@ -121,6 +122,7 @@
 		74D006CD23A8D94D0077628C /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		74DFDFA827E98BCB00798E47 /* UIViewController+TopMostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopMostViewController.swift"; sourceTree = "<group>"; };
 		74DFDFAA27E9CF0600798E47 /* UIEdgeInsetsExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsExtensionsTests.swift; sourceTree = "<group>"; };
+		74DFDFAC27EADE9800798E47 /* DataAppendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAppendTests.swift; sourceTree = "<group>"; };
 		74E0AD852536C04400A9318F /* NSAttributedStringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensionsTests.swift; sourceTree = "<group>"; };
 		74EA4916230146A2006E6592 /* UIColor+RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBA.swift"; sourceTree = "<group>"; };
 		74EA491823014B38006E6592 /* UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				7407EEC727E07BBA0025C363 /* SKProductSubscriptionPeriodFormatterTests.swift */,
 				7407EECD27E1C9A00025C363 /* CollectionExtensionsTests.swift */,
 				74DFDFAA27E9CF0600798E47 /* UIEdgeInsetsExtensionsTests.swift */,
+				74DFDFAC27EADE9800798E47 /* DataAppendTests.swift */,
 			);
 			path = SwiftToolkitTests;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				74DFDFAB27E9CF0600798E47 /* UIEdgeInsetsExtensionsTests.swift in Sources */,
 				7479F4BC241B557700C9D248 /* ClampTests.swift in Sources */,
 				742AFD0821CCF3FA001EB13E /* SwiftToolkitTests.swift in Sources */,
+				74DFDFAD27EADE9800798E47 /* DataAppendTests.swift in Sources */,
 				748D6C9B25396F6700061DF5 /* CGGeometryExtensionsTests.swift in Sources */,
 				742AFD1B21CE36AF001EB13E /* NotificationObserverTests.swift in Sources */,
 				74E0AD862536C04400A9318F /* NSAttributedStringExtensionsTests.swift in Sources */,
