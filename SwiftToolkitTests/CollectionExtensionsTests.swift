@@ -23,5 +23,24 @@ class CollectionExtensionsTests: XCTestCase {
         let emptyArray: [Int] = []
         XCTAssertEqual(emptyArray.chunked(by: 1), [])
     }
+    
+    func testIndicesOfEquatable() {
+        XCTAssertEqual([1, 2, 3].indices(of: 4), [])
+        XCTAssertEqual([1, 2, 3, 1, 5, 1].indices(of: 1), [0, 3, 5])
+    }
+    
+    func testRemoveEquatable() {
+        
+        var array = [1, 2, 3, 1, 3, 5]
+        
+        array.remove(4)
+        XCTAssertEqual(array, [1, 2, 3, 1, 3, 5])
+        
+        array.remove(5)
+        XCTAssertEqual(array, [1, 2, 3, 1, 3])
+        
+        array.remove(1)
+        XCTAssertEqual(array, [2, 3, 3])
+    }
 
 }
