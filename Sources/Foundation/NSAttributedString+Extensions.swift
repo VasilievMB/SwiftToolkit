@@ -24,6 +24,15 @@ public extension NSAttributedString {
         return NSRange(location: 0, length: length)
     }
     
+    var endingAttributes: Attributes? {
+        var endingAttributes: NSAttributedString.Attributes?
+        enumerateAttributes(in: fullRange, options: .reverse) { (attributes, _, stop) in
+            endingAttributes = attributes
+            stop.pointee = true
+        }
+        return endingAttributes
+    }
+    
 }
 
 public extension Array where Self.Element == NSAttributedString {
@@ -59,12 +68,7 @@ public extension Array where Self.Element == NSAttributedString {
         for (index, string) in enumerated() {
             result.append(string)
             if index != lastIndex {
-                var endingAttributes: NSAttributedString.Attributes?
-                string.enumerateAttributes(in: string.fullRange, options: .reverse) { (attributes, _, stop) in
-                    endingAttributes = attributes
-                    stop.pointee = true
-                }
-                let attributedSeparator = NSAttributedString(string: separator, attributes: endingAttributes)
+                let attributedSeparator = NSAttributedString(string: separator, attributes: string.endingAttributes)
                 result.append(attributedSeparator)
             }
         }
