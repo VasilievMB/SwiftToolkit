@@ -12,13 +12,63 @@ import XCTest
 class CGGeometryExtensionsTests: XCTestCase {
     
     private let accuracy: CGFloat = 1e-15
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    func testInitVectorWithPoint() {
+        let vector = CGVector(point: CGPoint(x: 1, y: 2))
+        XCTAssertEqual(vector.dx, 1)
+        XCTAssertEqual(vector.dy, 2)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testInitVectorFromPointToPoint() {
+        let vector = CGVector(from: CGPoint(x: 1, y: 2), to: CGPoint(x: 6, y: -2))
+        XCTAssertEqual(vector, CGVector(dx: 5, dy: -4))
+    }
+    
+    private func assertVectorsEqual(_ vector1: CGVector, _ vector2: CGVector, accuracy: CGFloat) {
+        XCTAssertEqual(vector1.dx, vector2.dx, accuracy: accuracy)
+        XCTAssertEqual(vector1.dy, vector2.dy, accuracy: accuracy)
+    }
+    
+    func testInitVectorWithAngle() {
+        assertVectorsEqual(CGVector(angle: 0), CGVector(dx: 1, dy: 0), accuracy: accuracy)
+        assertVectorsEqual(CGVector(angle: 0), CGVector(dx: 1, dy: 0), accuracy: accuracy)
+        assertVectorsEqual(CGVector(angle: .pi), CGVector(dx: -1, dy: 0), accuracy: accuracy)
+        assertVectorsEqual(CGVector(angle: .pi / 2), CGVector(dx: 0, dy: 1), accuracy: accuracy)
+        assertVectorsEqual(CGVector(angle: 3 * .pi / 2), CGVector(dx: 0, dy: -1), accuracy: accuracy)
+    }
+    
+    func testVectorLength() {
+        XCTAssertEqual(CGVector(dx: 0, dy: 2).length(), 2)
+        XCTAssertEqual(CGVector(dx: 2, dy: 0).length(), 2)
+        XCTAssertEqual(CGVector(dx: 3, dy: 4).length(), 5, accuracy: accuracy)
+        XCTAssertEqual(CGVector(dx: 3, dy: -4).length(), 5, accuracy: accuracy)
+        XCTAssertEqual(CGVector(dx: -3, dy: 4).length(), 5, accuracy: accuracy)
+    }
+    
+    func testVectorNormalize() {
+        func testNormalize(with vector: CGVector) {
+            let normalized = vector.normalized()
+            XCTAssertEqual(normalized.length(), 1, accuracy: accuracy)
+            XCTAssertEqual(normalized.angle, vector.angle, accuracy: accuracy)
+        }
+        
+        testNormalize(with: CGVector(dx: 123, dy: 567))
+        testNormalize(with: CGVector(dx: -533, dy: 2))
+        testNormalize(with: CGVector(dx: 0.1, dy: 0.53))
+        testNormalize(with: CGVector(dx: 0, dy: 69))
+        testNormalize(with: CGVector(dx: 42, dy: 0))
+    }
+    
+    func testVectorAngle() {
+        XCTAssertEqual(CGVector(dx: 1, dy: 0).angle, 0, accuracy: accuracy)
+        XCTAssertEqual(CGVector(dx: 0, dy: 1).angle, .pi / 2, accuracy: accuracy)
+        XCTAssertEqual(CGVector(dx: 1, dy: 1).angle, .pi / 4, accuracy: accuracy)
+        XCTAssertEqual(CGVector(dx: -1, dy: 0).angle, .pi, accuracy: accuracy)
+        XCTAssertEqual(CGVector(dx: 0, dy: -2).angle, -.pi / 2, accuracy: accuracy)
+    }
+    
+    func testVectorAddition() {
+        
     }
 
     func testCGVector() throws {

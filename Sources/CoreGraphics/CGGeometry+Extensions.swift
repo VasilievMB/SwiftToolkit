@@ -14,6 +14,10 @@ public extension CGVector {
         self.init(dx: point.x, dy: point.y)
     }
     
+    init(from start: CGPoint, to end: CGPoint) {
+        self.init(dx: end.x - start.x, dy: end.y - start.y)
+    }
+    
     init(angle: CGFloat) {
         self.init(dx: cos(angle), dy: sin(angle))
     }
@@ -88,7 +92,7 @@ public extension CGPoint {
     }
     
     func distanceSquared(to point: CGPoint) -> CGFloat {
-        return (CGVector(point: point) - CGVector(point: self)).lengthSquared()
+        return CGVector(from: self, to: point).lengthSquared()
     }
     
     func distance(to point: CGPoint) -> CGFloat {
