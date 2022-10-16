@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7406DF5528FC64BC0090D5BD /* AutoLayoutElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DF5428FC64BC0090D5BD /* AutoLayoutElement.swift */; };
 		7407EEC627E079BE0025C363 /* SKProductSubscriptionPeriodFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407EEC527E079BD0025C363 /* SKProductSubscriptionPeriodFormatter.swift */; };
 		7407EEC827E07BBA0025C363 /* SKProductSubscriptionPeriodFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407EEC727E07BBA0025C363 /* SKProductSubscriptionPeriodFormatterTests.swift */; };
 		7407EECA27E086990025C363 /* UIEdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407EEC927E086990025C363 /* UIEdgeInsets+Extensions.swift */; };
 		7407EECC27E1C72A0025C363 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407EECB27E1C72A0025C363 /* Collection+Extensions.swift */; };
 		7407EECE27E1C9A00025C363 /* CollectionExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407EECD27E1C9A00025C363 /* CollectionExtensionsTests.swift */; };
 		7407EED127E1D45D0025C363 /* NSLayoutConstraint+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407EED027E1D45D0025C363 /* NSLayoutConstraint+Convenience.swift */; };
-		7407EED327E1D5770025C363 /* UIView+ConstraintEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407EED227E1D5770025C363 /* UIView+ConstraintEdges.swift */; };
+		7407EED327E1D5770025C363 /* AutoLayoutElement+ConstraintEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407EED227E1D5770025C363 /* AutoLayoutElement+ConstraintEdges.swift */; };
 		7407EED727E1D6B60025C363 /* LayoutConstraintsUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407EED627E1D6B60025C363 /* LayoutConstraintsUpdater.swift */; };
 		7407EED927E2FCF60025C363 /* Data+Append.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407EED827E2FCF50025C363 /* Data+Append.swift */; };
 		742AFCC721CCF221001EB13E /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AFCC621CCF221001EB13E /* UserDefault.swift */; };
@@ -79,13 +80,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7406DF5428FC64BC0090D5BD /* AutoLayoutElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutElement.swift; sourceTree = "<group>"; };
 		7407EEC527E079BD0025C363 /* SKProductSubscriptionPeriodFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKProductSubscriptionPeriodFormatter.swift; sourceTree = "<group>"; };
 		7407EEC727E07BBA0025C363 /* SKProductSubscriptionPeriodFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKProductSubscriptionPeriodFormatterTests.swift; sourceTree = "<group>"; };
 		7407EEC927E086990025C363 /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
 		7407EECB27E1C72A0025C363 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		7407EECD27E1C9A00025C363 /* CollectionExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensionsTests.swift; sourceTree = "<group>"; };
 		7407EED027E1D45D0025C363 /* NSLayoutConstraint+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Convenience.swift"; sourceTree = "<group>"; };
-		7407EED227E1D5770025C363 /* UIView+ConstraintEdges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ConstraintEdges.swift"; sourceTree = "<group>"; };
+		7407EED227E1D5770025C363 /* AutoLayoutElement+ConstraintEdges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AutoLayoutElement+ConstraintEdges.swift"; sourceTree = "<group>"; };
 		7407EED627E1D6B60025C363 /* LayoutConstraintsUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintsUpdater.swift; sourceTree = "<group>"; };
 		7407EED827E2FCF50025C363 /* Data+Append.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Append.swift"; sourceTree = "<group>"; };
 		742AFC8321CCEF22001EB13E /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,9 +161,10 @@
 		7407EECF27E1D3F80025C363 /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				7406DF5428FC64BC0090D5BD /* AutoLayoutElement.swift */,
 				748D6C9C25397E9600061DF5 /* NSLayoutConstraint+Priority.swift */,
 				7407EED027E1D45D0025C363 /* NSLayoutConstraint+Convenience.swift */,
-				7407EED227E1D5770025C363 /* UIView+ConstraintEdges.swift */,
+				7407EED227E1D5770025C363 /* AutoLayoutElement+ConstraintEdges.swift */,
 				7407EED627E1D6B60025C363 /* LayoutConstraintsUpdater.swift */,
 			);
 			path = AutoLayout;
@@ -471,12 +474,13 @@
 				74E0AD872536C1D000A9318F /* NSAttributedString+Extensions.swift in Sources */,
 				7479F4BA241B553700C9D248 /* Comparable+Clamp.swift in Sources */,
 				74C1BE2523A3992B00445688 /* UserDefault+Observation.swift in Sources */,
-				7407EED327E1D5770025C363 /* UIView+ConstraintEdges.swift in Sources */,
+				7407EED327E1D5770025C363 /* AutoLayoutElement+ConstraintEdges.swift in Sources */,
 				742AFD1121CCF400001EB13E /* UserDefault.swift in Sources */,
 				74FA126823E1CF96009003EE /* UIImage+RoundedRect.swift in Sources */,
 				74C1BE2423A3991D00445688 /* PropertyListValue.swift in Sources */,
 				742AFD1921CD4CAC001EB13E /* NotificationObserver.swift in Sources */,
 				7407EED927E2FCF60025C363 /* Data+Append.swift in Sources */,
+				7406DF5528FC64BC0090D5BD /* AutoLayoutElement.swift in Sources */,
 				744A064323B9E3E70070793F /* TableReusableViewProviders.swift in Sources */,
 				74EA4917230146A2006E6592 /* UIColor+RGBA.swift in Sources */,
 				7407EED727E1D6B60025C363 /* LayoutConstraintsUpdater.swift in Sources */,

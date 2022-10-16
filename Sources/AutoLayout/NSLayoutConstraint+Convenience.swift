@@ -7,11 +7,6 @@
 
 import UIKit
 
-protocol AutoLayoutElement {}
-
-extension UIView: AutoLayoutElement {}
-extension UILayoutGuide: AutoLayoutElement {}
-
 extension NSLayoutConstraint {
     
     convenience init(_ view1: AutoLayoutElement,
