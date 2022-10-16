@@ -44,7 +44,7 @@ extension AutoLayoutElement {
                                   attribute,
                                   relation,
                                   to: anotherView,
-                                  anotherViewAttribute,
+                                  anotherViewAttribute ?? attribute,
                                   multiplier: multiplier,
                                   constant: constant)
     }

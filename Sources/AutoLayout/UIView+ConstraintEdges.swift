@@ -36,5 +36,14 @@ extension UIView {
         ]
     }
     
+    func constraintEdgesToSystemSpacing(in view: UIView) -> [NSLayoutConstraint] {
+        return [
+            leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 1),
+            trailingAnchor.constraint(equalToSystemSpacingAfter: view.trailingAnchor, multiplier: 1),
+            topAnchor.constraint(equalToSystemSpacingBelow: view.topAnchor, multiplier: 1),
+            bottomAnchor.constraint(equalToSystemSpacingBelow: view.bottomAnchor, multiplier: 1)
+        ]
+    }
+    
 }
 
