@@ -63,4 +63,11 @@ class NSAttributedStringExtensionsTests: XCTestCase {
         
         XCTAssertEqual(string.endingAttributes?[.foregroundColor] as? UIColor, endingColor)
     }
+    
+    func testJoinEmptyArray() {
+        
+        let strings: [NSAttributedString] = []
+        
+        XCTAssertEqual(strings.joined(), NSAttributedString(string: ""))
+    }
 }
