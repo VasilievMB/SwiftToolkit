@@ -8,12 +8,29 @@
 
 import Foundation
 
+public protocol AttributedStringConvertable {
+    func asAttributedString() -> NSAttributedString
+}
+
+extension String: AttributedStringConvertable {
+    
+    public func asAttributedString() -> NSAttributedString {
+        return NSAttributedString(string: self)
+    }
+}
+
+extension NSAttributedString: AttributedStringConvertable {
+    
+    public func asAttributedString() -> NSAttributedString {
+        return self
+    }
+}
+
 public extension String {
     
     func attributed(with attributes: NSAttributedString.Attributes) -> NSAttributedString {
         return NSAttributedString(string: self, attributes: attributes)
     }
-    
 }
 
 public extension NSAttributedString {
@@ -32,49 +49,46 @@ public extension NSAttributedString {
         }
         return endingAttributes
     }
-    
 }
 
-public extension Array where Self.Element == NSAttributedString {
-
+public extension Array where Element: AttributedStringConvertable {
+    
     func joined() -> NSAttributedString {
-        let result = NSMutableAttributedString()
-        result.beginEditing()
-        for string in self {
-            result.append(string)
+        return createAttributedStringEnumerating { partialResult, element, _ in
+            partialResult.append(element)
         }
-        result.endEditing()
-        return result
     }
     
     func joined(separator: NSAttributedString) -> NSAttributedString {
-        let result = NSMutableAttributedString()
-        result.beginEditing()
-        let lastIndex = endIndex - 1
-        for (index, string) in enumerated() {
-            result.append(string)
-            if index != lastIndex {
-                result.append(separator)
+        return createAttributedStringEnumerating { partialResult, element, isLast in
+            partialResult.append(element)
+            if !isLast {
+                partialResult.append(separator)
             }
         }
-        result.endEditing()
-        return result
     }
     
     func joined(separator: String) -> NSAttributedString {
+        return createAttributedStringEnumerating { partialResult, element, isLast in
+            partialResult.append(element)
+            if !isLast {
+                let attributedSeparator = NSAttributedString(string: separator, attributes: element.endingAttributes)
+                partialResult.append(attributedSeparator)
+            }
+        }
+    }
+    
+    private func createAttributedStringEnumerating(
+        with body: (_ partialResult: NSMutableAttributedString, _ element: NSAttributedString, _ isLast: Bool) throws -> Void
+    ) rethrows -> NSAttributedString {
+        
         let result = NSMutableAttributedString()
         result.beginEditing()
         let lastIndex = endIndex - 1
-        for (index, string) in enumerated() {
-            result.append(string)
-            if index != lastIndex {
-                let attributedSeparator = NSAttributedString(string: separator, attributes: string.endingAttributes)
-                result.append(attributedSeparator)
-            }
+        for (index, element) in enumerated() {
+            try body(result, element.asAttributedString(), index == lastIndex)
         }
         result.endEditing()
-        return result
+        return NSAttributedString(attributedString: result)
     }
-    
 }
-
